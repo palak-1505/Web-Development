@@ -1,0 +1,129 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Inter';
+    background-image: url('1489369.jpg');
+    background-size: 100% 1200%;
+    margin-left: 4rem;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* width: 40rem; 
+    height: 40rem; */
+    /* border: 1px solid grey; */
+
+}
+.main h1{
+    font-size: 5rem;
+    margin-bottom: .5rem;
+}
+
+.list li {
+    display: inline;
+    text-align: center;  
+    margin-right: 1.2rem;
+}
+
+.list button{
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color:  #ff7f00 ;
+    border: none;
+    margin-top: -1rem;
+    text-decoration: none;
+    color: black;
+    margin: .5rem;
+    margin-left: 0;
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border: 1px solid gray;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: none;
+} 
+
+input{  
+    width: 17rem;
+    height: 2rem;
+    
+}
+
+label{
+    
+    font-size: 1.1rem;
+    font-weight: bold;
+} 
+
+.add button,.remove button{
+    height: 3rem;
+    width: 17rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color:  #ff7f00 ;
+    border: none;
+}
+
+.remove{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    border: 1px solid gray;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: none;
+} 
+
+.task{
+    border: 1px solid gray;
+    border-radius: 2rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin: 1rem;
+    padding: 1rem;
+    padding-top: 1rem;
+    display: inline-block;
+    /* justify-content: center; */
+    
+}
+.task button{
+    background-color:  #ff7f00 ;
+    border: none;
+    height: 2rem;
+    width: 4rem;
+    font-weight: bold;
+
+}
+.no-tasks{
+    /* border: 1px solid gray;
+    border-radius: 2rem; */
+    /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin: 1rem; */
+    margin: 1rem;
+    padding: 1rem;
+    padding-top: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+
+}
+
+
+
+
+
+

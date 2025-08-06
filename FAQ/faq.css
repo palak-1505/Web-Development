@@ -1,0 +1,92 @@
+body{
+    box-sizing: border-box;
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#D2D5DA;
+}
+.container{
+    color: #030616;
+    background-color: #FFFFFF;
+    font-family:"Inter";
+    font-size: 1rem;
+    width: 768px;
+    font-weight: 80vh;
+    text-align: left;
+    padding: 5rem 15rem;
+    margin: 8rem 8rem ;
+    
+}
+a{
+    text-decoration: none;
+    color: #4E80EE;
+}
+h1{
+    
+    font-size: 2.25rem;
+    font-weight: 600px;
+}
+b{
+    font-weight: 400px;
+}
+.heading{
+    
+    text-align: center;
+    line-height: 30px;
+}
+.content1{
+    margin-top: 8rem;
+    line-height: 30px;
+}
+.content2{
+    margin-top: 3rem;
+    line-height: 30px;
+
+}
+hr{
+    color: #D2D5DA;
+    margin-top: 2rem;
+}
+.content2 ul{
+    line-height: 20px;
+
+}
+footer{
+    margin-top: 2rem;
+    line-height:30px ;
+}
+@media screen and (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        width: 90%; /* Makes the container take almost full width */
+        padding: 2rem 1rem; /* Reduces padding for smaller screens */
+        margin: 4rem 0; /* Less margin for smaller screens */
+        font-size: 0.95rem; /* Slightly smaller font for better fit */
+    }
+
+    h1 {
+        font-size: 1.75rem; /* Smaller heading for mobile */
+    }
+
+    .content1, .content2 {
+        margin-top: 4rem; /* Less spacing */
+        line-height: 24px; /* Adjust line height */
+    }
+
+    .content2 ul {
+        line-height: 18px;
+        padding-left: 1rem; /* Add some left padding for bullets */
+    }
+
+    footer {
+        font-size: 0.85rem;
+        line-height: 24px;
+        margin-top: 1rem;
+    }
+}
+

@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.5rem;
+    /* text-align: center; */
+    
+}
+fieldset h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+

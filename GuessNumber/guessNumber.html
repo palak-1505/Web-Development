@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="guessNumber.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main_container">
+
+    <div class="guess">
+        <div id="desp1">Try and guess a random number between 1 and 100.</div>
+        <div id="desp2">You have 8 attempts to guess the right number.</div>
+        <form class="guessClass">
+            <label for="userInput">Guess a Number</label>
+            <br>
+            <input type="text" id="userInput">
+            <br>
+            <input type="submit" id="subt" placeholder="Submit Guess" value="Submit Guess">
+        </form>
+    </div>
+    <div class="info">
+        <div>Previous Guesses : <span class="guesses"></span></div>
+        <div>Guesses Remaining : <span class="lastResult">8</span></div>
+        <div class="lowORhigh"></div>
+    </div>
+    </div>
+    <script src="guessNumber.js"></script>
+    
+</body>
+</html>

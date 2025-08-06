@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Job Application</h1>
+    <form>
+        <fieldset>
+
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+    
+            <label for="email">Email ID : </label>
+            <input type="email" id="emali" name="email" required>
+            <br><br>
+    
+            <label for="phone">Phone : </label>
+            <input type="tel" id="phone" name="phone"  pattern="[0-9]{10}"  required>
+            <br><br>
+    
+            <label for="resume">Resume : </label>
+            <input type="file" id="resume" name="resume" required >
+            <br><br>
+    
+            <label for="experience">Experience(years) : </label>
+            <input type="number" id="experience" name="experience" min="0" max="15" required>
+            <br><br>
+    
+            <fieldset>
+                <legend>Skills : </legend>
+    
+                <label for="html">HTML</label>
+                <input type="checkbox" id="html" name="html">
+    
+                <label for="css">CSS</label>
+                <input type="checkbox" id="css" name="css">
+    
+                <label for="javascript">JavaScript</label>
+                <input type="checkbox" id="javascript" name="javascript">
+    
+            </fieldset>
+            <br><br>
+    
+            <label for="qualification">Highest Qualification : </label>
+            <select name="qualification" id="qualification">
+                <option value="">Highest Qualification</option>
+                <option value="highSchool">High School</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="graduate">Graduate</option>
+                <option value="postgraduate">Postgraduate</option>
+                <option value="phd">Ph.d</option>
+            </select>
+            <br><br>
+    
+            <fieldset>
+                <legend>Availability : </legend>
+    
+                <label for="full">Full time</label>
+                <input type="radio" id="full" name="radio">
+
+                <br>
+    
+                <label for="part">Part time</label>
+                <input type="radio" id="part" name="radio">
+    
+            </fieldset>
+    
+            <label for="comment">Additional Comment : </label><br>
+            <textarea name="comment" id="comment" col="60" rows="5" required></textarea>
+    
+            <input type="submit" value="Submit">
+    
+        </fieldset>
+
+    </form>
+
+    
+</body>
+</html>
