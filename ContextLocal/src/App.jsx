@@ -2,38 +2,42 @@
 import React, { useEffect, useState } from "react";
 import { TodoContextProvider } from "./context/TodoContext";
 import TodoForm from "./components/Todoform";
+import TodoItems from "./components/TodoItems";
+import { TodoContext } from "./context/TodoContext";
 
-function App() {
 
-  const [todos ,setTodo]=useState([])
+  function App() {
+
+  const [todos ,setTodos]=useState([]);
 
   const addTodo = (todo)=>{
-    setTodo((prev)=>{[{id:Date.now(),...todo},...prev]})
+    setTodos((prev)=>[{id:Date.now(),...todo},...prev])
   }
 
   const updateTodo = (id,todo)=>{
-    setTodo((prev)=>prev.map(
+    setTodos((prev)=>prev.map(
       (prevTodo) => prevTodo.id === id ? todo : prevTodo)
     )
   }
 
   const deleteTodo = (id) => {
-    setTodo((prev) => prev.filter(
+    setTodos((prev) => prev.filter(
       (todo) => todo.id !== id))
   }
 
   const toggleTodo = (id) => {
-    setTodo((prev) => prev.map(
-      (prevTodo) =>
-         prevTodo.id === id ? { ...prevTodo , Completed : ! prevTodo.Completed} : prevTodo
-    ))
+    //console.log(id);
+    setTodos((prev) => 
+    prev.map((prevTodo) => 
+      prevTodo.id === id ? { ...prevTodo, 
+        completed: !prevTodo.completed } : prevTodo))
   }
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("todos"))
 
     if(todos && todos.length > 0){
-      setTodo(todos)
+      setTodos(todos)
     }
   },[])
 
@@ -52,8 +56,15 @@ function App() {
                         {/* Todo form goes here */}
                         <TodoForm/> 
                     </div>
-                    <div className="flex flex-wrap gap-y-3">
+                    <div className="flex flex-wrap w-full">
                         {/*Loop and Add TodoItem here */}
+                         {todos.map((todo) => (
+                          <div key={todo.id}
+                          className='w-full'
+                          >
+                            <TodoItems todo={todo} />
+                          </div>
+                        ))}
                     </div>
                 </div>
             </div>

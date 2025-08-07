@@ -1,4 +1,21 @@
-function TodoItem({ todo }) {
+import { useState } from "react";
+import { useTodo } from "../context/TodoContext";
+
+function TodoItems({ todo }) {
+
+    const [isTodoEditable , setIsTodoEditable] = useState(false);
+    const [todoMsg , setTodoMsg] = useState(todo.todo)
+    const {updateTodo,deleteTodo,toggleTodo} = useTodo()
+
+    const editTodo = () =>{
+        updateTodo({...todo,todo:todoMsg})
+        setIsTodoEditable(false)
+    }
+
+    const toggleCompleted = () => {
+        toggleTodo(todo.id)
+    }
+
     
 
     return (
@@ -47,4 +64,4 @@ function TodoItem({ todo }) {
     );
 }
 
-export default TodoItem;
+export default TodoItems;
